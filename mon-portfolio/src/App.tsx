@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
+import { Projects } from './components/Projects'
+import { Resume } from './components/Resume'
 import './App.css'
 
 const aboutBio = [
@@ -27,6 +29,10 @@ function App() {
       />
 
       <Skills />
+
+      <Projects />
+
+      <Resume />
     </main>
   )
 }
