@@ -529,3 +529,23 @@ figcaption {
   width: 18px;
   height: 18px;
 }
+
+.discourd-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  justify-items: center;
+}
+
+.detail-image-mobile {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #374151;
+  background-color: #0b0f19;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
