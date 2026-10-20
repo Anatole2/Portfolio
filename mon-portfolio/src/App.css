@@ -1,3 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(11, 15, 25, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1f2937;
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #818cf8;
+  cursor: pointer;
+  letter-spacing: -0.05em;
+  user-select: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  transition: color 0.2s ease;
+  font-family: inherit;
+}
+
+.navbar-link:hover {
+  color: #f3f4f6;
+}
+
+@media (max-width: 640px) {
+  .navbar-container {
+    padding: 0.85rem 1rem;
+  }
+
+  .navbar-links {
+    gap: 0.6rem;
+  }
+
+  .navbar-link {
+    font-size: 0.82rem;
+    padding: 0.25rem 0.35rem;
+  }
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;

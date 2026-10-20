@@ -1,3 +1,4 @@
+import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
@@ -15,23 +16,36 @@ const aboutBio = [
 function App() {
 
   return (
-    <main>
-      <Hero
-        name="Anatole Dupuis"
-        role="Développeur Web Fullstack"
-      />
+    <>
+      <Navbar />
+      <main>
+        <section id="hero">
+          <Hero
+            name="Anatole Dupuis"
+            role="Développeur Web Fullstack"
+          />
+        </section>
 
-      <About
-        title="À propos de moi"
-        paragraphs={aboutBio}
-      />
+        <section id="about">
+          <About
+            title="À propos de moi"
+            paragraphs={aboutBio}
+          />
+        </section>
 
-      <Skills />
+        <section id="skills">
+          <Skills />
+        </section>
 
-      <Projects />
+        <section id="projects">
+          <Projects />
+        </section>
 
-      <Resume />
-    </main>
+        <section id="resume">
+          <Resume />
+        </section>
+      </main>
+    </>
   )
 }
 
